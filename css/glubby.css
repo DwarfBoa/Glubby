@@ -147,9 +147,9 @@ button{
     padding: 0px 10px;
   }
   
-  /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+  /* removes sidebar when viewed on mobile */
 @media (max-width: 991px) {
-    .main-wrapper .sidebar-column {
+    .main-wrapper .sidenav {
         display: none;
     }
 }
