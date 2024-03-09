@@ -148,7 +148,7 @@ button{
   }
   
   /* removes sidebar when viewed on mobile */
-@media (max-width: 991px) {
+@media (max-width: 700px) {
     .main-wrapper .sidenav {
         display: none !important;
     }
