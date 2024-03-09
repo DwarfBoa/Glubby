@@ -148,11 +148,11 @@ button{
   }
   
   /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-  @media (max-width: 500px) {
-    #sidenav {
-        display: none;
+  @media screen and (max-width: 799px) {
+    #sidebar {
+        display:none;
     }
-}
+ }
 
   img{
     border-radius: 30px;
