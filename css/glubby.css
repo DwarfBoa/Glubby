@@ -45,6 +45,7 @@ a{
 a:hover{
     color: blueviolet;
     opacity: .5;
+    transition: opacity 0.15s;
 }
 
 /* footer styles */
