@@ -148,15 +148,19 @@ button{
     padding: 0px 10px;
   }
   
- /* Media query for devices with a maximum width of 768 pixels (typical for mobile devices) */
+/* Media query for devices with a maximum width of 768 pixels (typical for mobile devices) */
 @media only screen and (max-width: 768px) {
     /* Styles to apply when the screen width is 768 pixels or less */
     .sidenav {
-      display: none !important; /* This will hide the sidebar on mobile devices */
-      /* or you can add additional styling to make it responsive */
-      /* For example, you might want to make it full-width or stack below other content */
+        width: 0; /* Set the width to 0 to hide the sidebar */
+        transition: width 0.3s ease; /* Add a transition for a smoother effect */
     }
-  }
+  
+    /* Optional: If you want to make the page content full-width on mobile devices */
+    .main {
+        margin-left: 0; /* Remove the margin on the left */
+    }
+}
 
   img{
     border-radius: 30px;
