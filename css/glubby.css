@@ -11,6 +11,7 @@ header{
     text-align: center;
     padding-top: 50px;
     padding-bottom: 50px;
+    animation: fade-up 0.5s;
 }
 
 header h1 {
@@ -22,7 +23,7 @@ header h1 {
 
 /* main styles */
 main{
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 20px;
 
@@ -126,6 +127,42 @@ button{
     background-color: #111; /* Black */
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 20px;
+    animation: fade-right 1s;
+  }
+  /* KEYFRAMES */
+  @keyframes fade-right {
+    0%{
+        opacity: 0;
+        transform: translateX(-30px) scale(1);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0px) scale(1);
+    }
+  }
+  @keyframes fade-up {
+    0%{
+        opacity: 0;
+        transform: translateY(30px) scale(0.9);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+  }
+  
+  @keyframes fade-down {
+    0%{
+        opacity: 0;
+        transform: translateY(-30px) scale(0.9);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
   }
   
   /* The navigation menu links */
@@ -177,4 +214,5 @@ header img{
 
 iframe{
     padding: 20px;
+    max-width: 100%;
 }
